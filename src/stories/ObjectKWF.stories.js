@@ -19,7 +19,7 @@ const Template = (args) => ({
   template: '<ObjectKWF v-bind="args"/>',
 });
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Unknown = Template.bind({});
+Unknown.args = {
   iconName: "unknown",
 };
