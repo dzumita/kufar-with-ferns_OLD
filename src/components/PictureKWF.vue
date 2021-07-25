@@ -34,7 +34,7 @@ export default {
 @import url("../assets/styleGuide.css");
 
 .picture-kwf {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.8rem;
+  height: 2.8rem;
 }
 </style>

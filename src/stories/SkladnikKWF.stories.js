@@ -6,7 +6,16 @@ export default {
   argTypes: {
     iconName: {
       control: "select",
-      options: ["unknown", "dirty", "water", "fire"],
+      options: ["empty", "dirty", "water", "fire"],
+    },
+    count: {
+      control: "number",
+      max: 999,
+      min: 0,
+    },
+    attribute: {
+      control: "select",
+      options: ["er", "ot", "cl"],
     },
   },
 };
@@ -19,7 +28,7 @@ const Template = (args) => ({
   template: '<SkladnikKWF v-bind="args"/>',
 });
 
-export const Unknown = Template.bind({});
-Unknown.args = {
-  iconName: "unknown",
+export const Empty = Template.bind({});
+Empty.args = {
+  iconName: "empty",
 };

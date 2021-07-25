@@ -7,7 +7,7 @@ export default {
     pictureSource: {
       control: "select",
       options: [
-        "skrynia/unknown",
+        "skrynia/empty",
         "skrynia/dirty",
         "skrynia/water",
         "skrynia/fire",
@@ -24,7 +24,7 @@ const Template = (args) => ({
   template: '<PictureKWF v-bind="args"/>',
 });
 
-export const Unknown = Template.bind({});
-Unknown.args = {
-  pictureSource: "skrynia/unknown",
+export const Empty = Template.bind({});
+Empty.args = {
+  pictureSource: "skrynia/empty",
 };

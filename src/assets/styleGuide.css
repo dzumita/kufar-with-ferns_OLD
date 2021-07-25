@@ -6,8 +6,6 @@
 }
 
 :root {
-  --padding:         0.5rem;
-  --gap:             1.5rem;
   --borderRadius:    8px;
   --border:          2px solid var(--activeColor);
   --mainFont:        'uni0553', serif;
@@ -21,6 +19,8 @@
   /*~~~Size~~~*/
   --maxWidth: 1000px;
   --maxHeight: 1000px;
+  --padding:         0.5rem;
+  --gap:             1.5rem;
 
   /*~~~Colors~~~*/
   --background:  var(--Flesh);

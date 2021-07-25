@@ -1,6 +1,8 @@
 <template>
   <button class="skladnik-kwf">
+    <p class="skladnik-kwf__count">{{ count || 0 }}</p>
     <PictureKWF :picture-source="`skrynia/${iconName}`" :name="iconName" />
+    <p class="skladnik-kwf__type">{{ attribute || 'er' }}</p>
   </button>
 </template>
 
@@ -12,6 +14,14 @@ export default {
   components: { PictureKWF },
   props: {
     iconName: {
+      type: String,
+      required: true,
+    },
+    count: {
+      type: Number,
+      required: true,
+    },
+    attribute: {
       type: String,
       required: true,
     },
@@ -27,11 +37,16 @@ export default {
   border: var(--border);
   border-radius: var(--borderRadius);
 
-  width: 3rem;
-  height: 3rem;
+  color: var(--activeColor);
+  font-size: 0.7rem;
+  line-height: 0.6rem;
+
+  width: 4rem;
+  height: 4rem;
+  padding: 0.2rem;
+  padding-top: 0.9rem;
 
   display: flex;
-  align-items: center;
   justify-content: center;
 
   position: relative;
@@ -57,5 +72,24 @@ export default {
   border: var(--focusBorder);
 
   -webkit-tap-highlight-color: transparent;
+}
+
+.skladnik-kwf__count {
+  padding-left: 0.2rem;
+  padding-top: 0.2rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.skladnik-kwf__type {
+  text-transform: uppercase;
+  padding-right: 0.2rem;
+  padding-top: 0.2rem;
+
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 </style>
