@@ -2,7 +2,7 @@
   <button class="skladnik-kwf">
     <p class="skladnik-kwf__count">{{ count || 0 }}</p>
     <PictureKWF :picture-source="`skrynia/${iconName}`" :name="iconName" />
-    <p class="skladnik-kwf__type">{{ attribute || 'er' }}</p>
+    <p class="skladnik-kwf__type">{{ attribute || 'err' }}</p>
   </button>
 </template>
 
@@ -75,8 +75,13 @@ export default {
 }
 
 .skladnik-kwf__count {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  max-width: 44%;
   padding-left: 0.2rem;
   padding-top: 0.2rem;
+  overflow: hidden;
 
   position: absolute;
   top: 0;
@@ -85,8 +90,13 @@ export default {
 
 .skladnik-kwf__type {
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  max-width: 44%;
   padding-right: 0.2rem;
   padding-top: 0.2rem;
+  overflow: hidden;
 
   position: absolute;
   top: 0;

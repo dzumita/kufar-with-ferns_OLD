@@ -38,24 +38,24 @@ export default {
   },
   setup() {
     const skrynia = [
-      { id: 0, name: "empty", count: 0, attribute: "er" },
-      { id: 1, name: "antiempty", count: 99, attribute: "er" },
-      { id: 2, name: "dirty", count: 8, attribute: "ot" },
-      { id: 3, name: "dirtyClass", count: 9, attribute: "cl" },
-      { id: 4, name: "dust", count: 5, attribute: "ot" },
-      { id: 5, name: "earid", count: 6, attribute: "ot" },
-      { id: 6, name: "empty", count: 5, attribute: "ot" },
-      { id: 7, name: "energy", count: 5, attribute: "ot" },
-      { id: 8, name: "energyClass", count: 1, attribute: "cl" },
-      { id: 9, name: "fire", count: 3, attribute: "ot" },
-      { id: 10, name: "fireClass", count: 42, attribute: "cl" },
-      { id: 11, name: "firid", count: 5, attribute: "ot" },
-      { id: 12, name: "sand", count: 2, attribute: "ot" },
-      { id: 13, name: "stone", count: 5, attribute: "ot" },
-      { id: 14, name: "strumenid", count: 6, attribute: "ot" },
-      { id: 16, name: "watenid", count: 1, attribute: "ot" },
-      { id: 17, name: "water", count: 11, attribute: "ot" },
-      { id: 18, name: "waterClass", count: 5, attribute: "cl" },
+      { id: 0, name: "empty", count: 0, attribute: "err" },
+      { id: 1, name: "antiempty", count: 99, attribute: "err" },
+      { id: 2, name: "dirty", count: 8, attribute: "oth" },
+      { id: 3, name: "dirtyClass", count: 9, attribute: "cls" },
+      { id: 4, name: "dust", count: 5, attribute: "oth" },
+      { id: 5, name: "earid", count: 6, attribute: "oth" },
+      { id: 6, name: "empty", count: 5, attribute: "oth" },
+      { id: 7, name: "energy", count: 5, attribute: "oth" },
+      { id: 8, name: "energyClass", count: 1, attribute: "cls" },
+      { id: 9, name: "fire", count: 3, attribute: "oth" },
+      { id: 10, name: "fireClass", count: 42, attribute: "cls" },
+      { id: 11, name: "firid", count: 5, attribute: "oth" },
+      { id: 12, name: "sand", count: 2, attribute: "oth" },
+      { id: 13, name: "stone", count: 5, attribute: "oth" },
+      { id: 14, name: "strumenid", count: 6, attribute: "oth" },
+      { id: 16, name: "watenid", count: 1, attribute: "oth" },
+      { id: 17, name: "water", count: 11, attribute: "oth" },
+      { id: 18, name: "waterClass", count: 5, attribute: "cls" },
     ];
 
     return { skrynia };
@@ -102,6 +102,11 @@ export default {
   color: var(--activeColor);
   font-size: 1.2rem;
   font-weight: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  max-width: 70%;
+  overflow: hidden;
 }
 
 .skrynia-kwf__button-filter {
