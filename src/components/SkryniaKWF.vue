@@ -38,8 +38,8 @@ export default {
   },
   setup() {
     const skrynia = [
-      { id: 0, name: "empty", count: 0, attribute: "err" },
-      { id: 1, name: "antiempty", count: 99, attribute: "err" },
+      { id: 0, name: "empty", count: 0, attribute: "emp" },
+      { id: 1, name: "antiempty", count: 99, attribute: "emp" },
       { id: 2, name: "dirty", count: 8, attribute: "oth" },
       { id: 3, name: "dirtyClass", count: 9, attribute: "cls" },
       { id: 4, name: "dust", count: 5, attribute: "oth" },

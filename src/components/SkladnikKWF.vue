@@ -2,7 +2,7 @@
   <button class="skladnik-kwf">
     <p class="skladnik-kwf__count">{{ count || 0 }}</p>
     <PictureKWF :picture-source="`skrynia/${iconName}`" :name="iconName" />
-    <p class="skladnik-kwf__type">{{ attribute || "err" }}</p>
+    <p class="skladnik-kwf__type">{{ attribute || "emp" }}</p>
   </button>
 </template>
 
