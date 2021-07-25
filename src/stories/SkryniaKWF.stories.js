@@ -7,6 +7,9 @@ export default {
     title: {
       control: "text",
     },
+    hasFilter: {
+      control: "boolean",
+    },
   },
 };
 
@@ -19,3 +22,6 @@ const Template = (args) => ({
 });
 
 export const Primary = Template.bind({});
+Primary.args = {
+  hasFilter: true,
+};
