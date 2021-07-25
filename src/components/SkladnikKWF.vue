@@ -1,6 +1,6 @@
 <template>
-  <button class="object-kwf">
-    <PictureKWF :picture-source="`objects/${iconName}`" :name="iconName" />
+  <button class="skladnik-kwf">
+    <PictureKWF :picture-source="`skladniks/${iconName}`" :name="iconName" />
   </button>
 </template>
 
@@ -8,7 +8,7 @@
 import PictureKWF from "./PictureKWF.vue";
 
 export default {
-  name: "ObjectKWF",
+  name: "SkladnikKWF",
   components: { PictureKWF },
   props: {
     iconName: {
@@ -22,7 +22,7 @@ export default {
 <style scoped>
 @import url("../assets/styleGuide.css");
 
-.object-kwf {
+.skladnik-kwf {
   background: var(--background);
   border: var(--border);
   border-radius: var(--borderRadius);
@@ -44,13 +44,13 @@ export default {
   transition: var(--transition);
 }
 
-.object-kwf:active {
+.skladnik-kwf:active {
   transform: var(--transformActive);
 
   -webkit-tap-highlight-color: transparent;
 }
 
-.object-kwf:focus {
+.skladnik-kwf:focus {
   outline: none;
   background: var(--focusBackground);
   filter: var(--focusFilter);

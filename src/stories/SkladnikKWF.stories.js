@@ -1,8 +1,8 @@
-import ObjectKWF from "../components/ObjectKWF";
+import SkladnikKWF from "../components/SkladnikKWF";
 
 export default {
-  title: "Components/ObjectKWF",
-  component: ObjectKWF,
+  title: "Components/SkladnikKWF",
+  component: SkladnikKWF,
   argTypes: {
     iconName: {
       control: "select",
@@ -12,11 +12,11 @@ export default {
 };
 
 const Template = (args) => ({
-  components: { ObjectKWF },
+  components: { SkladnikKWF },
   setup() {
     return { args };
   },
-  template: '<ObjectKWF v-bind="args"/>',
+  template: '<SkladnikKWF v-bind="args"/>',
 });
 
 export const Unknown = Template.bind({});

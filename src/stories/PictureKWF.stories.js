@@ -7,10 +7,10 @@ export default {
     pictureSource: {
       control: "select",
       options: [
-        "objects/unknown",
-        "objects/dirty",
-        "objects/water",
-        "objects/fire",
+        "skladniks/unknown",
+        "skladniks/dirty",
+        "skladniks/water",
+        "skladniks/fire",
       ],
     },
   },
@@ -26,5 +26,5 @@ const Template = (args) => ({
 
 export const Unknown = Template.bind({});
 Unknown.args = {
-  pictureSource: "objects/unknown",
+  pictureSource: "skladniks/unknown",
 };
