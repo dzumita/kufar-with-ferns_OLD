@@ -1,6 +1,6 @@
 <template>
   <button class="skladnik-kwf">
-    <PictureKWF :picture-source="`skladniks/${iconName}`" :name="iconName" />
+    <PictureKWF :picture-source="`skrynia/${iconName}`" :name="iconName" />
   </button>
 </template>
 
@@ -54,7 +54,7 @@ export default {
   outline: none;
   background: var(--focusBackground);
   filter: var(--focusFilter);
-  border-color: var(--focusBorder);
+  border: var(--focusBorder);
 
   -webkit-tap-highlight-color: transparent;
 }
