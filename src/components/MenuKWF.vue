@@ -34,7 +34,7 @@ export default {
 }
 
 .menu-kwf .router-link-active {
-  color: var(--activeColor);
+  color: var(--fontColor);
 
   position: relative;
 }
@@ -42,7 +42,7 @@ export default {
 .menu-kwf .router-link-active:before {
   content: "";
 
-  background: var(--activeColor);
+  background: var(--fontColor);
   border-radius: var(--borderRadius);
 
   width: 100%;

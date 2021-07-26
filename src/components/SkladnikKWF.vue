@@ -37,7 +37,7 @@ export default {
   border: var(--border);
   border-radius: var(--borderRadius);
 
-  color: var(--activeColor);
+  color: var(--fontColor);
   font-size: 0.7rem;
   line-height: 0.6rem;
 

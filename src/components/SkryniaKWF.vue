@@ -99,7 +99,7 @@ export default {
 }
 
 .skrynia-kwf__title {
-  color: var(--activeColor);
+  color: var(--fontColor);
   font-size: 1.2rem;
   font-weight: normal;
   text-overflow: ellipsis;
@@ -115,7 +115,7 @@ export default {
   border-radius: var(--borderRadius);
 
   font-family: var(--mainFont);
-  color: var(--activeColor);
+  color: var(--fontColor);
   font-size: 0.9rem;
   cursor: pointer;
 }
