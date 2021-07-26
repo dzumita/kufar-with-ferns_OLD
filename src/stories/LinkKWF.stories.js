@@ -22,5 +22,5 @@ const Template = (args) => ({
 export const Paparac = Template.bind({});
 Paparac.args = {
   iconName: "paparac",
-  path: "/",
+  hasActive: true,
 };

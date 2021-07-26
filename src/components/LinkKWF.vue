@@ -1,8 +1,8 @@
 <template>
-  <router-link class="link-kwf" :to="{ path }">
+  <button :class="`link-kwf ` + (hasActive ? `link-kwf--active` : '')">
     <PictureKWF :picture-source="`menu/${iconName}`" :name="iconName" />
     <p class="link-kwf__text">{{ iconName }}</p>
-  </router-link>
+  </button>
 </template>
 
 <script lang="ts">
@@ -16,9 +16,10 @@ export default {
       type: String,
       required: true,
     },
-    path: {
-      type: String,
-      required: true,
+    hasActive: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
   },
 };
@@ -28,6 +29,9 @@ export default {
 @import url("../assets/styleGuide.css");
 
 .link-kwf {
+  background: none;
+  border: none;
+
   user-select: none;
   cursor: pointer;
 
@@ -50,6 +54,26 @@ export default {
   border-color: var(--focusBorder);
 
   -webkit-tap-highlight-color: transparent;
+}
+
+.link-kwf.link-kwf--active {
+  color: var(--fontColor);
+
+  position: relative;
+}
+
+.link-kwf.link-kwf--active:before {
+  content: "";
+
+  background: var(--fontColor);
+  border-radius: var(--borderRadius);
+
+  width: 100%;
+  height: 2px;
+
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
 }
 
 .link-kwf__text {
