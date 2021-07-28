@@ -34,6 +34,8 @@ export default {
 @import url("../assets/styleGuide.css");
 
 .picture-kwf {
+  font-family: var(--mainFont);
+
   width: 2.8rem;
   height: 2.8rem;
 }

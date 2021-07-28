@@ -71,6 +71,8 @@ export default {
   border: none;
   border-radius: var(--borderRadius);
 
+  font-family: var(--mainFont);
+
   max-width: calc(var(--maxWidth) - var(--padding));
   max-height: calc(var(--maxHeight) - var(--padding));
   padding: var(--padding);

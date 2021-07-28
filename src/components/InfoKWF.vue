@@ -41,6 +41,7 @@ export default {
   border-radius: var(--borderRadius);
 
   color: var(--fontColor);
+  font-family: var(--mainFont);
   font-size: 1rem;
 
   padding: var(--padding);

@@ -33,6 +33,8 @@ export default {
 @import url("../assets/styleGuide.css");
 
 .menu-kwf {
+  font-family: var(--mainFont);
+
   max-width: calc(var(--maxWidth) - var(--padding));
   max-height: calc(var(--maxHeight) - var(--padding));
   padding: var(--padding);

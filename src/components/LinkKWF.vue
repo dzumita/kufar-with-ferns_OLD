@@ -32,6 +32,8 @@ export default {
   background: none;
   border: none;
 
+  font-family: var(--mainFont);
+
   user-select: none;
   cursor: pointer;
 
