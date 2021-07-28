@@ -1,6 +1,6 @@
 {
   "name": "kufar-with-ferns",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Paparac",
   "license": "AGPL-3.0",
   "description": "Library for game about alchemical crafting",
@@ -19,14 +19,12 @@
     "storybook": "start-storybook -p 6006"
   },
   "dependencies": {
-    "@storybook/addon-a11y": "^6.3.6",
-    "@storybook/addon-postcss": "^2.0.0",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0",
-    "vue-router": "^4.0.0-0"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
+    "@storybook/addon-a11y": "^6.3.6",
     "@storybook/addon-actions": "^6.3.6",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-links": "^6.3.6",
