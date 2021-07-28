@@ -16,7 +16,12 @@ export default {
   },
 };
 
-const Template = (args) => ({
+interface template {
+  iconName: string;
+  hasActive: boolean;
+}
+
+const Template = (args: template) => ({
   components: { LinkKWF },
   setup() {
     return { args };
@@ -25,6 +30,7 @@ const Template = (args) => ({
 });
 
 export const Paparac = Template.bind({});
+// @ts-ignore
 Paparac.args = {
   iconName: "paparac",
   hasActive: true,

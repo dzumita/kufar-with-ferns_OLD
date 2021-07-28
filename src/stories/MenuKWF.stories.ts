@@ -5,7 +5,7 @@ export default {
   component: MenuKWF,
 };
 
-const Template = (args) => ({
+const Template = (args: never) => ({
   components: { MenuKWF },
   setup() {
     return { args };

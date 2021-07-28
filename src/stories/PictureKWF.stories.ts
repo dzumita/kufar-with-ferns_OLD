@@ -17,7 +17,11 @@ export default {
   },
 };
 
-const Template = (args) => ({
+interface template {
+  pictureSource: string;
+}
+
+const Template = (args: template) => ({
   components: { PictureKWF },
   setup() {
     return { args };
@@ -26,6 +30,7 @@ const Template = (args) => ({
 });
 
 export const Empty = Template.bind({});
+// @ts-ignore
 Empty.args = {
   pictureSource: "skrynia/empty",
 };

@@ -17,13 +17,19 @@ export default {
     },
     attribute: {
       control: "select",
-      options: ["er", "ot", "cl"],
+      options: ["emp", "oth", "cls", "met"],
       description: "Sets an attribute of an item",
     },
   },
 };
 
-const Template = (args) => ({
+interface template {
+  iconName: string;
+  count: number;
+  attribute: string;
+}
+
+const Template = (args: template) => ({
   components: { SkladnikKWF },
   setup() {
     return { args };
@@ -32,6 +38,7 @@ const Template = (args) => ({
 });
 
 export const Empty = Template.bind({});
+// @ts-ignore
 Empty.args = {
   iconName: "empty",
 };

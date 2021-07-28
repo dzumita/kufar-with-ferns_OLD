@@ -15,7 +15,12 @@ export default {
   },
 };
 
-const Template = (args) => ({
+interface template {
+  title: string;
+  hasFilter: boolean;
+}
+
+const Template = (args: template) => ({
   components: { SkryniaKWF },
   setup() {
     return { args };
@@ -24,6 +29,7 @@ const Template = (args) => ({
 });
 
 export const Primary = Template.bind({});
+// @ts-ignore
 Primary.args = {
   hasFilter: true,
 };

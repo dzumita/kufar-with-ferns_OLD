@@ -5,7 +5,7 @@ export default {
   component: InfoKWF,
 };
 
-const Template = (args) => ({
+const Template = (args: never) => ({
   components: { InfoKWF },
   setup() {
     return { args };
