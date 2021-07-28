@@ -1,4 +1,4 @@
-import SkladnikKWF from "../components/SkladnikKWF";
+import SkladnikKWF from "../components/SkladnikKWF.vue";
 
 export default {
   title: "Components/SkladnikKWF",
@@ -7,15 +7,18 @@ export default {
     iconName: {
       control: "select",
       options: ["empty", "dirty", "water", "fire"],
+      description: "Sets a picture for an item",
     },
     count: {
       control: "number",
       max: 999,
       min: 0,
+      description: "Sets the number of items",
     },
     attribute: {
       control: "select",
       options: ["er", "ot", "cl"],
+      description: "Sets an attribute of an item",
     },
   },
 };

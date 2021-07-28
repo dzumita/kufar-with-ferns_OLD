@@ -1,4 +1,4 @@
-import PictureKWF from "../components/PictureKWF";
+import PictureKWF from "../components/PictureKWF.vue";
 
 export default {
   title: "Components/PictureKWF",
@@ -12,6 +12,7 @@ export default {
         "skrynia/water",
         "skrynia/fire",
       ],
+      description: "Sets the picture",
     },
   },
 };

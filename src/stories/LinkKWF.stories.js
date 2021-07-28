@@ -1,4 +1,4 @@
-import LinkKWF from "../components/LinkKWF";
+import LinkKWF from "../components/LinkKWF.vue";
 
 export default {
   title: "Components/LinkKWF",
@@ -7,6 +7,11 @@ export default {
     iconName: {
       control: "select",
       options: ["paparac", "furnace", "shop", "info", "settings"],
+      description: "Sets a picture for a link",
+    },
+    hasActive: {
+      control: "boolean",
+      description: "Sets whether the item will be active",
     },
   },
 };

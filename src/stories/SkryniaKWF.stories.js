@@ -1,4 +1,4 @@
-import SkryniaKWF from "../components/SkryniaKWF";
+import SkryniaKWF from "../components/SkryniaKWF.vue";
 
 export default {
   title: "Components/SkryniaKWF",
@@ -6,9 +6,11 @@ export default {
   argTypes: {
     title: {
       control: "text",
+      description: "Sets the title for an item",
     },
     hasFilter: {
       control: "boolean",
+      description: "Sets the display of a filter on an item",
     },
   },
 };

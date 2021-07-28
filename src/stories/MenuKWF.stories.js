@@ -1,4 +1,4 @@
-import MenuKWF from "../components/MenuKWF";
+import MenuKWF from "../components/MenuKWF.vue";
 
 export default {
   title: "Components/MenuKWF",

@@ -1,4 +1,4 @@
-import InfoKWF from "../components/InfoKWF";
+import InfoKWF from "../components/InfoKWF.vue";
 
 export default {
   title: "Components/InfoKWF",
