@@ -19,6 +19,8 @@
     "storybook": "start-storybook -p 6006"
   },
   "dependencies": {
+    "@storybook/addon-a11y": "^6.3.6",
+    "@storybook/addon-postcss": "^2.0.0",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"
