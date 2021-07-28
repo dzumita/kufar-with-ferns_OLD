@@ -73,8 +73,6 @@
 
 /*~~~Text~~~*/
 h1, h6, p, span {
-  font-family: var(--mainFont);
-
   width:  fit-content;
   height: fit-content;
   margin: 0;
