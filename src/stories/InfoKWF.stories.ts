@@ -1,16 +1,16 @@
-import InfoKWF from "../components/InfoKWF.vue";
+import Info from "../components/InfoKWF.vue";
 
 export default {
-  title: "Components/InfoKWF",
-  component: InfoKWF,
+  title: "Components/Info KWF",
+  component: Info,
 };
 
 const Template = (args: never) => ({
-  components: { InfoKWF },
+  components: { Info },
   setup() {
     return { args };
   },
-  template: '<InfoKWF v-bind="args"/>',
+  template: '<Info v-bind="args"/>',
 });
 
-export const Empty = Template.bind({});
+export const InfoKWF = Template.bind({});

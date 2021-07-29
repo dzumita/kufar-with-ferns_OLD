@@ -1,8 +1,8 @@
-import PictureKWF from "../components/PictureKWF.vue";
+import Picture from "../components/PictureKWF.vue";
 
 export default {
-  title: "Components/PictureKWF",
-  component: PictureKWF,
+  title: "Components/Picture KWF",
+  component: Picture,
   argTypes: {
     pictureSource: {
       control: "select",
@@ -22,15 +22,15 @@ interface template {
 }
 
 const Template = (args: template) => ({
-  components: { PictureKWF },
+  components: { Picture },
   setup() {
     return { args };
   },
-  template: '<PictureKWF v-bind="args"/>',
+  template: '<Picture v-bind="args"/>',
 });
 
-export const Empty = Template.bind({});
+export const PictureKWF = Template.bind({});
 // @ts-ignore
-Empty.args = {
+PictureKWF.args = {
   pictureSource: "skrynia/empty",
 };

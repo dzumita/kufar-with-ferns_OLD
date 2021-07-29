@@ -1,8 +1,8 @@
-import SkladnikKWF from "../components/SkladnikKWF.vue";
+import Skladnik from "../components/SkladnikKWF.vue";
 
 export default {
-  title: "Components/SkladnikKWF",
-  component: SkladnikKWF,
+  title: "Components/Skladnik KWF",
+  component: Skladnik,
   argTypes: {
     iconName: {
       control: "select",
@@ -30,15 +30,15 @@ interface template {
 }
 
 const Template = (args: template) => ({
-  components: { SkladnikKWF },
+  components: { Skladnik },
   setup() {
     return { args };
   },
-  template: '<SkladnikKWF v-bind="args"/>',
+  template: '<Skladnik v-bind="args"/>',
 });
 
-export const Empty = Template.bind({});
+export const SkladnikKWF = Template.bind({});
 // @ts-ignore
-Empty.args = {
+SkladnikKWF.args = {
   iconName: "empty",
 };

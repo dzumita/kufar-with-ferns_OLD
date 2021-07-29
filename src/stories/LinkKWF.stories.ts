@@ -1,8 +1,8 @@
-import LinkKWF from "../components/LinkKWF.vue";
+import Link from "../components/LinkKWF.vue";
 
 export default {
-  title: "Components/LinkKWF",
-  component: LinkKWF,
+  title: "Components/Link KWF",
+  component: Link,
   argTypes: {
     iconName: {
       control: "select",
@@ -22,16 +22,16 @@ interface template {
 }
 
 const Template = (args: template) => ({
-  components: { LinkKWF },
+  components: { Link },
   setup() {
     return { args };
   },
-  template: '<LinkKWF v-bind="args"/>',
+  template: '<Link v-bind="args"/>',
 });
 
-export const Paparac = Template.bind({});
+export const LinkKWF = Template.bind({});
 // @ts-ignore
-Paparac.args = {
+LinkKWF.args = {
   iconName: "paparac",
   hasActive: true,
 };

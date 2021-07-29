@@ -1,8 +1,8 @@
-import ButtonKWF from "../components/ButtonKWF.vue";
+import Button from "../components/ButtonKWF.vue";
 
 export default {
-  title: "Components/ButtonKWF",
-  component: ButtonKWF,
+  title: "Components/Button KWF",
+  component: Button,
   argTypes: {
     label: {
       control: "text",
@@ -15,15 +15,15 @@ interface template {
 }
 
 const Template = (args: template) => ({
-  components: { ButtonKWF },
+  components: { Button },
   setup() {
     return { args };
   },
-  template: '<ButtonKWF v-bind="args"/>',
+  template: '<Button v-bind="args"/>',
 });
 
-export const Primary = Template.bind({});
+export const ButtonKWF = Template.bind({});
 // @ts-ignore
-Primary.args = {
+ButtonKWF.args = {
   label: "Click me!",
 };

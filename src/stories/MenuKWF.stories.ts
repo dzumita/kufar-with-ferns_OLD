@@ -1,16 +1,16 @@
-import MenuKWF from "../components/MenuKWF.vue";
+import Menu from "../components/MenuKWF.vue";
 
 export default {
-  title: "Components/MenuKWF",
-  component: MenuKWF,
+  title: "Components/Menu KWF",
+  component: Menu,
 };
 
 const Template = (args: never) => ({
-  components: { MenuKWF },
+  components: { Menu },
   setup() {
     return { args };
   },
-  template: '<MenuKWF v-bind="args"/>',
+  template: '<Menu v-bind="args"/>',
 });
 
-export const Primary = Template.bind({});
+export const MenuKWF = Template.bind({});
