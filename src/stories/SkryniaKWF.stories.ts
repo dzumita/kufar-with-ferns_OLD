@@ -1,8 +1,8 @@
-import SkryniaKWF from "../components/SkryniaKWF.vue";
+import Skrynia from "../components/SkryniaKWF.vue";
 
 export default {
-  title: "Components/SkryniaKWF",
-  component: SkryniaKWF,
+  title: "Components/Skrynia KWF",
+  component: Skrynia,
   argTypes: {
     title: {
       control: "text",
@@ -21,15 +21,16 @@ interface template {
 }
 
 const Template = (args: template) => ({
-  components: { SkryniaKWF },
+  components: { Skrynia },
   setup() {
     return { args };
   },
-  template: '<SkryniaKWF v-bind="args"/>',
+  template: '<Skrynia v-bind="args"/>',
 });
 
-export const Primary = Template.bind({});
+export const SkryniaKWF = Template.bind({});
 // @ts-ignore
-Primary.args = {
+SkryniaKWF.args = {
+  hasSelection: true,
   hasFilter: true,
 };

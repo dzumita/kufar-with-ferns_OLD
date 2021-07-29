@@ -2,9 +2,14 @@
   <div class="skrynia-kwf">
     <div class="skrynia-kwf__header">
       <h6 class="skrynia-kwf__title">{{ title }}</h6>
-      <button class="skrynia-kwf__button-filter" v-show="hasFilter">
-        Filter: None
-      </button>
+      <div class="skrynia-kwf__header-controls">
+        <button class="skrynia-kwf__button" v-show="hasSelection">
+          Selection: 1
+        </button>
+        <button class="skrynia-kwf__button" v-show="hasFilter">
+          Filter: None
+        </button>
+      </div>
     </div>
     <div class="skrynia-kwf__content">
       <SkladnikKWF
@@ -29,6 +34,11 @@ export default {
       type: String,
       required: false,
       default: "Skrynia:",
+    },
+    hasSelection: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
     hasFilter: {
       type: Boolean,
@@ -95,9 +105,10 @@ export default {
 
 .skrynia-kwf__header {
   padding-bottom: 1rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 65% 35%;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: end;
 }
 
 .skrynia-kwf__title {
@@ -107,11 +118,17 @@ export default {
   text-overflow: ellipsis;
   white-space: nowrap;
 
-  max-width: 70%;
+  max-width: 65%;
   overflow: hidden;
 }
 
-.skrynia-kwf__button-filter {
+.skrynia-kwf__header-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.skrynia-kwf__button {
   background: var(--background);
   border: none;
   border-radius: var(--borderRadius);
@@ -120,9 +137,11 @@ export default {
   color: var(--fontColor);
   font-size: 0.9rem;
   cursor: pointer;
+
+  margin-left: 1rem;
 }
 
-.skrynia-kwf__button-filter:active {
+.skrynia-kwf__button:active {
   transform: var(--transformActive);
 
   -webkit-tap-highlight-color: transparent;

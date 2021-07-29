@@ -11,7 +11,11 @@
     </div>
 
     <div class="factory-kwf__list">
-      <SkryniaKWF :title="`Objects for ${name}:`" />
+      <SkryniaKWF
+        :title="`Objects for ${name}:`"
+        :hasFilter="true"
+        :hasSelection="true"
+      />
     </div>
   </div>
 </template>
@@ -28,7 +32,7 @@ export default {
       type: String,
       required: true,
     },
-  }
+  },
 };
 </script>
 
