@@ -30,7 +30,6 @@ export default {
   white-space: nowrap;
 
   width: 100%;
-  max-width: 18rem;
   padding: calc(var(--padding) / 2) var(--padding);
   overflow: hidden;
 
