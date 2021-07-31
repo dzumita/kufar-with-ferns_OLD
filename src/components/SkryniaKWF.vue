@@ -98,7 +98,7 @@ export default {
   grid-template-columns: repeat(auto-fill, 4rem);
   grid-template-rows: repeat(auto-fill, 4rem);
   grid-gap: var(--padding);
-  justify-content: space-between;
+  justify-content: space-around;
 
   overflow-y: auto;
 }

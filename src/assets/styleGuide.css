@@ -71,6 +71,10 @@
   background-color: var(--trackBackground);
 }
 
+/*html, body {*/
+/*  overflow: hidden;*/
+/*}*/
+
 /*~~~Text~~~*/
 h1, h6, p, span {
   width:  fit-content;
