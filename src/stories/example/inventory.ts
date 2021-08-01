@@ -1,5 +1,13 @@
 const inventory = [
   {
+    id: -2,
+    name: "rEmpty",
+    attribute: "emp",
+    group: "empty",
+    source: "paparac",
+    count: 9,
+  },
+  {
     id: -1,
     name: "aEmpty",
     attribute: "emp",
