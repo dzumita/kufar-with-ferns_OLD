@@ -20,6 +20,7 @@ export default {
       paparac: true,
       shop: false,
       furnace: false,
+      anvil: false,
       info: false,
       settings: false,
     };

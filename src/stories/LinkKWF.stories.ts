@@ -6,7 +6,7 @@ export default {
   argTypes: {
     iconName: {
       control: "select",
-      options: ["paparac", "furnace", "shop", "info", "settings"],
+      options: ["paparac", "furnace", "anvil", "shop", "info", "settings"],
       description: "Sets a picture for a link",
     },
     hasActive: {
