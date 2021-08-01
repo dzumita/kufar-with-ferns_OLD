@@ -124,7 +124,7 @@ const inventory = [
     name: "dust",
     attribute: "oth",
     group: "other",
-    source: "paparac",
+    source: "anvil",
     count: 5,
   },
   {
@@ -132,7 +132,7 @@ const inventory = [
     name: "sand",
     attribute: "oth",
     group: "other",
-    source: "paparac",
+    source: "anvil",
     count: 2,
   },
   {
@@ -142,6 +142,22 @@ const inventory = [
     group: "metal",
     source: "paparac",
     count: 5,
+  },
+  {
+    id: 16,
+    name: "steam",
+    attribute: "oth",
+    group: "other",
+    source: "paparac",
+    count: 15,
+  },
+  {
+    id: 16,
+    name: "lava",
+    attribute: "oth",
+    group: "other",
+    source: "paparac",
+    count: 11,
   },
 ];
 
