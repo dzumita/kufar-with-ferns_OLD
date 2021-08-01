@@ -97,19 +97,19 @@ const inventory = [
   },
   {
     id: 11,
-    name: "strumenid",
-    attribute: "met",
-    group: "metal",
-    source: "paparac",
-    count: 6,
-  },
-  {
-    id: 12,
     name: "watenid",
     attribute: "met",
     group: "metal",
     source: "paparac",
     count: 1,
+  },
+  {
+    id: 12,
+    name: "strumenid",
+    attribute: "met",
+    group: "metal",
+    source: "paparac",
+    count: 6,
   },
   {
     id: 13,
