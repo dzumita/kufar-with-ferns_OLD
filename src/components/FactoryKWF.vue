@@ -2,7 +2,7 @@
   <div class="factory-kwf">
     <div class="factory-kwf__interface">
       <div class="factory-kwf__interface-result">
-        <SkryniaKWF title="Result:" />
+        <SkryniaKWF title="Result:" :content="result" />
       </div>
 
       <div class="factory-kwf__interface-active">
@@ -15,6 +15,7 @@
         :title="`Objects for ${name}:`"
         :hasFilter="true"
         :hasSelection="true"
+        :content="list"
       />
     </div>
   </div>
@@ -32,6 +33,45 @@ export default {
       type: String,
       required: true,
     },
+  },
+  setup() {
+    const list = [
+      {
+        id: 5,
+        name: "water",
+        attribute: "oth",
+        group: "other",
+        source: "paparac",
+        count: 11,
+      },
+      {
+        id: 6,
+        name: "waterClass",
+        attribute: "class",
+        group: "other",
+        source: "paparac",
+        count: 5,
+      },
+      {
+        id: 7,
+        name: "energy",
+        attribute: "oth",
+        group: "other",
+        source: "paparac",
+        count: 5,
+      },
+    ];
+    const result = [
+      {
+        id: -1,
+        name: "aEmpty",
+        attribute: "emp",
+        group: "empty",
+        source: "paparac",
+        count: 99,
+      },
+    ];
+    return { list, result };
   },
 };
 </script>
