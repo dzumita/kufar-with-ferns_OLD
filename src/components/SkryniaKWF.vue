@@ -13,7 +13,7 @@
     </div>
     <div class="skrynia-kwf__content">
       <SkladnikKWF
-        v-for="skladnik in skrynia"
+        v-for="skladnik in content"
         :key="skladnik.id"
         :icon-name="skladnik.name"
         :count="skladnik.count"
@@ -35,6 +35,10 @@ export default {
       required: false,
       default: "Skrynia:",
     },
+    content: {
+      type: Array,
+      required: true,
+    },
     hasSelection: {
       type: Boolean,
       required: false,
@@ -46,29 +50,8 @@ export default {
       default: false,
     },
   },
-  setup() {
-    const skrynia = [
-      { id: 0, name: "empty", count: 0, attribute: "emp" },
-      { id: 1, name: "antiempty", count: 99, attribute: "emp" },
-      { id: 2, name: "dirty", count: 8, attribute: "oth" },
-      { id: 3, name: "dirtyClass", count: 9, attribute: "cls" },
-      { id: 4, name: "dust", count: 5, attribute: "oth" },
-      { id: 5, name: "earid", count: 6, attribute: "met" },
-      { id: 6, name: "empty", count: 5, attribute: "emp" },
-      { id: 7, name: "energy", count: 5, attribute: "oth" },
-      { id: 8, name: "energyClass", count: 1, attribute: "cls" },
-      { id: 9, name: "fire", count: 3, attribute: "oth" },
-      { id: 10, name: "fireClass", count: 42, attribute: "cls" },
-      { id: 11, name: "firid", count: 5, attribute: "met" },
-      { id: 12, name: "sand", count: 2, attribute: "oth" },
-      { id: 13, name: "stone", count: 5, attribute: "oth" },
-      { id: 14, name: "strumenid", count: 6, attribute: "met" },
-      { id: 16, name: "watenid", count: 1, attribute: "met" },
-      { id: 17, name: "water", count: 11, attribute: "oth" },
-      { id: 18, name: "waterClass", count: 5, attribute: "cls" },
-    ];
-
-    return { skrynia };
+  updated() {
+    console.log(this.content);
   },
 };
 </script>

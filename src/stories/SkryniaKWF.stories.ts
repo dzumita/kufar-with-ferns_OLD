@@ -1,4 +1,5 @@
 import Skrynia from "../components/SkryniaKWF.vue";
+import inventory from "./example/inventory";
 
 export default {
   title: "Components/Skrynia KWF",
@@ -16,6 +17,7 @@ export default {
 };
 
 interface template {
+  content: [];
   title: string;
   hasFilter: boolean;
 }
@@ -31,6 +33,7 @@ const Template = (args: template) => ({
 export const SkryniaKWF = Template.bind({});
 // @ts-ignore
 SkryniaKWF.args = {
+  content: inventory,
   hasSelection: true,
   hasFilter: true,
 };
