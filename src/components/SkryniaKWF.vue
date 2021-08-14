@@ -50,9 +50,6 @@ export default {
       default: false,
     },
   },
-  updated() {
-    console.log(this.content);
-  },
 };
 </script>
 
@@ -68,7 +65,6 @@ export default {
 
   max-width: calc(var(--maxWidth) - var(--padding));
   max-height: calc(var(--maxHeight) - var(--padding));
-  padding: var(--padding);
 
   overflow: hidden;
 }
@@ -88,10 +84,9 @@ export default {
 
 .skrynia-kwf__header {
   padding-bottom: 1rem;
-  display: grid;
-  grid-template-columns: 65% 35%;
+  display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .skrynia-kwf__title {
