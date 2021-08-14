@@ -18,9 +18,9 @@ export default {
   setup() {
     const linksCollection = {
       paparac: true,
-      shop: false,
       furnace: false,
       anvil: false,
+      krama: false,
       info: false,
       settings: false,
     };
