@@ -37,26 +37,31 @@ export default {
 
 <style scoped>
 .info-kwf {
-  border: var(--border);
   border-radius: var(--borderRadius);
 
   color: var(--fontColor);
   font-family: var(--mainFont);
   font-size: 1rem;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
   padding: var(--padding);
-  width: fit-content;
-  max-width: 40%;
-  height: fit-content;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
 .info-kwf__text {
-  max-width: 100%;
-  overflow: hidden;
-
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-align: center;
+
+  width: fit-content;
+  overflow: hidden;
 }
 
 .info-kwf__icon {
@@ -66,8 +71,6 @@ export default {
   margin-bottom: var(--padding);
   border-bottom: var(--border);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 </style>
