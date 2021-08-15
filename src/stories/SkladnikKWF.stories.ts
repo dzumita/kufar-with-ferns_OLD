@@ -41,4 +41,6 @@ export const SkladnikKWF = Template.bind({});
 // @ts-ignore
 SkladnikKWF.args = {
   iconName: "empty",
+  count: 1,
+  attribute: "emp",
 };
