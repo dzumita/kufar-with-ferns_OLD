@@ -1,5 +1,5 @@
 <template>
-  <button class="skladnik-kwf">
+  <button class="skladnik-kwf" @dblclick="dblclick">
     <p class="skladnik-kwf__count">{{ count || 0 }}</p>
     <PictureKWF :picture-source="`skrynia/${iconName}`" :name="iconName" />
     <p class="skladnik-kwf__type">{{ attribute || "emp" }}</p>
@@ -24,6 +24,10 @@ export default {
     attribute: {
       type: String,
       required: true,
+    },
+    dblclick: {
+      type: Function,
+      required: false,
     },
   },
 };

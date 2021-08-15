@@ -34,6 +34,7 @@ export default {
       required: true,
     },
   },
+
   setup() {
     const list = [
       {
@@ -71,6 +72,7 @@ export default {
         count: 99,
       },
     ];
+
     return { list, result };
   },
 };

@@ -1,4 +1,8 @@
 <template>
+  <PopupContainerKWF :visibility="visibility" :popup-close="changeVisibility">
+    <InfoKWF />
+  </PopupContainerKWF>
+
   <div class="skrynia-kwf">
     <div class="skrynia-kwf__header">
       <h6 class="skrynia-kwf__title">{{ title }}</h6>
@@ -18,17 +22,21 @@
         :icon-name="skladnik.name"
         :count="skladnik.count"
         :attribute="skladnik.attribute"
+        :dblclick="changeVisibility"
       />
     </div>
   </div>
 </template>
 
 <script lang="ts">
+import { ref } from "vue";
+import PopupContainerKWF from "@/components/PopupContainerKWF";
+import InfoKWF from "@/components/InfoKWF";
 import SkladnikKWF from "./SkladnikKWF.vue";
 
 export default {
   name: "SkryniaKWF",
-  components: { SkladnikKWF },
+  components: { PopupContainerKWF, InfoKWF, SkladnikKWF },
   props: {
     title: {
       type: String,
@@ -49,6 +57,16 @@ export default {
       required: false,
       default: false,
     },
+  },
+
+  setup() {
+    let visibility = ref(false);
+    const changeVisibility = () => {
+      visibility.value = !visibility.value;
+      console.log("Visibility: ", visibility);
+    };
+
+    return { visibility, changeVisibility };
   },
 };
 </script>
