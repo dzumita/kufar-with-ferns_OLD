@@ -63,9 +63,6 @@ export default {
 
   font-family: var(--mainFont);
 
-  max-width: calc(var(--maxWidth) - var(--padding));
-  max-height: calc(var(--maxHeight) - var(--padding));
-
   overflow: hidden;
 }
 
