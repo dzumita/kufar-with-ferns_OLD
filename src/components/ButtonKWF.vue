@@ -29,7 +29,6 @@ export default {
   text-overflow: ellipsis;
   white-space: nowrap;
 
-  max-width: var(--maxWidth);
   width: 100%;
   padding: calc(var(--padding) / 2) var(--padding);
   overflow: hidden;
